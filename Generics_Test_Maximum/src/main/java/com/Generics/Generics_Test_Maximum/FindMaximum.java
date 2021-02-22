@@ -12,5 +12,18 @@ public class FindMaximum
 		return maximumValue;
 		
 	}
+	
+
+	public static Float maximumFloat(  Float d, Float e, Float f) {
+		Float maximumValue = d;
+		if (e.compareTo(maximumValue) > 0)
+			maximumValue = e;
+		if (f.compareTo(maximumValue) > 0)
+			maximumValue = f;
+		System.out.println(maximumValue);
+		return maximumValue;
+		
+		
+	}
 
 }
