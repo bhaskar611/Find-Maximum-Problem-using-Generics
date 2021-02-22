@@ -1,11 +1,16 @@
 package com.Generics.Generics_Test_Maximum;
 
-
-
 public class FindMaximum 
 {
-	public static void printWelcomeMessage() {
-		System.out.println("****Welcome to the Generics Test Maximum Program******");
+	
+	public static Integer maximumInteger(Integer a, Integer b, Integer c) {
+		Integer maximumValue = a;
+		if (b.compareTo(maximumValue) > 0)
+			maximumValue = b;
+		if (c.compareTo(maximumValue) > 0)
+			maximumValue = c;
+		return maximumValue;
+		
 	}
 
 }
