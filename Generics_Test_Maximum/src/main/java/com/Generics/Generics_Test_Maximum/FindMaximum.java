@@ -1,4 +1,7 @@
 package com.Generics.Generics_Test_Maximum;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class FindMaximum<T extends Comparable<T>> {
 	T firstValue;
@@ -26,6 +29,13 @@ public class FindMaximum<T extends Comparable<T>> {
 		System.out.println(maximumValue);
 		
 		return maximumValue;
+	}
+	// maximum method for more variables
+	public static <T extends Comparable<T>> T maximumOfObject(T... value) {
+		List<T> list = Arrays.asList(value);
+		Collections.sort(list);
+		System.out.println("Maximum Value is " + list.get(list.size() - 1));
+		return list.get(list.size() - 1);
 	}
 	
 }
